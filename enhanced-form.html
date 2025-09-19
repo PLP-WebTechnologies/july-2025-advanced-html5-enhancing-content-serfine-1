@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A simple multi-section web page showcasing lists, tables, media, and an HTML5 form with validation." />
+  <title>User Registration and Web Elements</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Page</h1>
+    <p>This page demonstrates lists, tables, media, and a complete HTML5 form with validation.</p>
+  </header>
+
+  <main>
+    <!--  LISTS SECTION -->
+    <section>
+      <h2 >Popular Web Development Tools</h2>
+      <article>
+        <h3>Frontend Tools</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>React</li>
+        </ul>
+      </article>
+
+      <article>
+        <h3>Backend Tools</h3>
+        <ol>
+          <li>Node.js</li>
+          <li>Express.js</li>
+          <li>Python</li>
+          <li>Django</li>
+        </ol>
+      </article>
+    </section>
+
+    <!--  TABLE SECTION -->
+    <section>
+      <h2>Comparison of Hosting Plans</h2>
+      <table border="1" cellpadding="5" cellspacing="0">
+        <caption>Web Hosting Plans Overview</caption>
+        <thead>
+          <tr>
+            <th scope="col">Plan</th>
+            <th scope="col">Storage</th>
+            <th scope="col">Bandwidth</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Basic</td>
+            <td>10 GB</td>
+            <td>100 GB</td>
+            <td>$5/month</td>
+          </tr>
+          <tr>
+            <td>Standard</td>
+            <td>50 GB</td>
+            <td>500 GB</td>
+            <td>$10/month</td>
+          </tr>
+          <tr>
+            <td>Premium</td>
+            <td>200 GB</td>
+            <td>Unlimited</td>
+            <td>$20/month</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!--  MEDIA SECTION -->
+    <section>
+      <h2>Media</h2>
+      <article>
+        <h3>Image</h3>
+        <img src="c:\Users\HP\OneDrive\Pictures\Sunset.jpg" alt="Picture of the sunset" width="500" height="300" />
+      </article>
+      <article>
+        <h3>Video</h3>
+        <video controls width="400">
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </article>
+    </section>
+
+    <!-- FORM SECTION -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Enter your name here.." required /><br /><br />
+
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="you@gmail.com" required /><br /><br />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your number here..." required /><br /><br />
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required /><br /><br />
+
+          <label for="gender">Gender:</label>
+            <input type="radio" name="gender" value="male" required />Male
+            <input type="radio" name="gender" value="female" required />Female
+            <input type="radio" name="gender" value="other" required />Other
+          <br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Information</legend>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username"  required minlength="5" /><br /><br />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter password" maxlength="8" /><br /><br />
+
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter password" maxlength="8" /><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+          <p>Subscribe to:</p>
+          <input type="checkbox" id="newsletter" name="subscription" value="newsletter" />
+          <label for="newsletter">Newsletter</label><br />
+
+          <input type="checkbox" id="updates" name="subscription" value="updates" />
+          <label for="updates">Product Updates</label><br /><br />
+
+          <p>Choose your preferred contact method:</p>
+          <input type="radio" id="contact-email" name="contact" value="email" required />
+          <label for="contact-email">Email</label><br />
+
+          <input type="radio" id="contact-phone" name="contact" value="phone" />
+          <label for="contact-phone">Phone</label><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Other Details</legend>
+          <label for="website">Website (optional):</label>
+          <input type="url" id="website" name="website" placeholder="https://example.com" /><br /><br />
+
+          <label for="bio">Short Bio:</label><br />
+          <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Tell us about yourself..." required></textarea><br /><br />
+
+          <label for="readonly-field">Referral Code (Read-only):</label>
+          <input type="text" id="readonly-field" name="referral" value="AUTO123" readonly /><br /><br />
+        </fieldset>
+
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Enhanced html Page. All rights reserved.</p>
+  </footer>
+</body>
+</html>
